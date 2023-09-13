@@ -1,0 +1,10 @@
+services:
+  web-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    #Enlaza los contenedores de manera automatica
+    volumes:
+      - .:/Proyecto-paises
+    ports:
+     - '80:80'
